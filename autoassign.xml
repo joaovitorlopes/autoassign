@@ -22,6 +22,7 @@
          <num>1.0.0</num>
          <compatibility>10.0</compatibility>
          <compatibility>11.0</compatibility>
+         <download_url>https://github.com/joaovitorlopes/autoassign/releases/download/1.0.0/autoassign.tar.bz2</download_url>
       </version>
    </versions>
    <license>GPLv2+</license>
