@@ -14,7 +14,7 @@ Each features are configurable from the main config page.
 - cd /tmp
 
 ## Download the plugin:
-- <a href="https://github.com/joaovitorlopes/autoassign/releases/download/1.0.0/autoassign.tar.bz2" target="_blank"><img src="https://img.shields.io/badge/1.0.0-DOWNLOAD_AUTOASSIGN-green.svg?logo=php&logoColor=white&style=for-the-badge%221.0.0"  alt="Download it" target="_blank"></a>
+- <a href="https://github.com/joaovitorlopes/autoassign/releases/download/1.0.0/autoassign.tar.bz2" target="_blank"><img src="https://img.shields.io/badge/1.0.0-DOWNLOAD_AUTOASSIGN-green.svg?logo=php&logoColor=white&style=for-the-badge"  alt="Download it" target="_blank"></a>
 - wget https://github.com/joaovitorlopes/autoassign/releases/download/1.0.0/autoassign.tar.bz2
 
 ## Install bzip2 to extract the contents:
