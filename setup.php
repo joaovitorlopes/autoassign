@@ -29,7 +29,7 @@ function plugin_version_autoassign() {
     return [
         'name'           => 'Auto Assignment Technicians',
         'version'        => PLUGIN_AUTOASSIGN_VERSION,
-        'author'         => '<a href="https://github.com/joaovitorlopes/">Joao Vitor Lopes</a>',
+        'author'         => 'Joao Vitor Lopes',
         'license'        => 'GPLv2+',
         'homepage'       => 'https://github.com/joaovitorlopes/autoassign',
         'requirements'   => [
