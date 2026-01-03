@@ -1,10 +1,11 @@
 # Autoassign GLPI plugin
 
-This plugin automatically assigns technicians to a ticket in a way that doesn't overload those who already have multiple tickets on their list, based on the group automatically assigned through rules.
+- This plugin automatically assigns technicians to a ticket in order to avoid overloading those who already have several tickets on their list, based on the group automatically assigned through rules when tickets are opened.
+- It also has other filters, such as: the possibility of removing the automatic assignment of a specific technician (Example: The technician went on vacation) and also being able to choose ITIL categories that will not receive automatic assignment.
 
 ## Configuration page
 
-Each features are configurable from the main config page.
+- Each features are configurable from the main config page.
 
 ![config](screenshots/config.png)
 
