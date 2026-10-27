@@ -37,7 +37,11 @@ class PluginAutoassignConfig extends CommonDBTM {
         
         echo "<div class='center'>";
         echo "<form method='post' action='$form_action'>";
-        echo Html::hidden('_glpi_csrf_token', ['value' => Session::getNewCSRFToken()]);
+        
+        // Token CSRF: só gera se o método existir (compatível com GLPI 11 e 12)
+        if (method_exists('Session', 'getNewCSRFToken')) {
+            echo Html::hidden('_glpi_csrf_token', ['value' => Session::getNewCSRFToken()]);
+        }
         
         echo "<table class='tab_cadre_fixe' style='width: 80%;'>";
         echo "<tr><th colspan='2'>Configuração do Auto Assign</th></tr>";
@@ -125,7 +129,7 @@ class PluginAutoassignConfig extends CommonDBTM {
         $user_where = ['is_active' => 1, 'is_deleted' => 0];
         
         if (!empty($allowed_profiles)) {
-            // Busca usuários que têm os perfis selecionados - CORRIGIDO
+            // Busca usuários que têm os perfis selecionados
             $users_with_profiles = $DB->request([
                 'SELECT' => ['users_id'],
                 'DISTINCT' => true,
@@ -223,7 +227,7 @@ class PluginAutoassignConfig extends CommonDBTM {
         echo "</tr>";
         
         echo "</table>";
-        Html::closeForm();
+        echo "</form>";
         echo "</div>";
         
         $js = <<<JS
@@ -242,5 +246,3 @@ JS;
         echo Html::scriptBlock($js);
     }
 }
-
-?>

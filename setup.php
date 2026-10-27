@@ -1,7 +1,7 @@
 <?php
 
-define('PLUGIN_AUTOASSIGN_VERSION', '1.0.0');
-define('PLUGIN_AUTOASSIGN_MIN_GLPI', '10.0');
+define('PLUGIN_AUTOASSIGN_VERSION', '1.1.0');
+define('PLUGIN_AUTOASSIGN_MIN_GLPI', '11.0');
 
 require_once(__DIR__ . '/hook/hook.php');
 
@@ -127,5 +127,3 @@ function plugin_autoassign_uninstall() {
     
     return true;
 }
-
-?>
