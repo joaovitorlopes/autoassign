@@ -25,11 +25,11 @@
 - tar -jxvf autoassign.tar.bz2
 
 ## Move the plugin to the GLPI plugins folder:
-- mv autoassign /var/www/YOUR_PATH/glpi/plugins/
+- mv autoassign YOUR_PATH/glpi/plugins/
 
 ## Now grant permission to the plugin folder:
-- chown -R www-data:www-data /var/www/YOUR_PATH/glpi/plugins/autoassign/
-- chmod -R 755 /var/www/YOUR_PATH/glpi/plugins/autoassign/
+- chown -R www-data:www-data YOUR_PATH/glpi/plugins/autoassign/
+- chmod -R 755 YOUR_PATH/glpi/plugins/autoassign/
 
 ## Install and activate the plugin from the glpi plugins menu:
 ![plugininstall](screenshots/plugin-install.png)
