@@ -15,8 +15,8 @@
 - cd /tmp
 
 ## Download the plugin:
-- <a href="https://github.com/joaovitorlopes/autoassign/releases/download/1.0.0/autoassign.tar.bz2" target="_blank"><img src="https://img.shields.io/badge/1.0.0-DOWNLOAD_AUTOASSIGN-green.svg?logo=php&logoColor=white&style=for-the-badge"  alt="Download it" target="_blank"></a>
-- wget https://github.com/joaovitorlopes/autoassign/releases/download/1.0.0/autoassign.tar.bz2
+- <a href="https://github.com/joaovitorlopes/autoassign/releases/download/1.1.0/autoassign.tar.bz2" target="_blank"><img src="https://img.shields.io/badge/1.1.0-DOWNLOAD_AUTOASSIGN-green.svg?logo=php&logoColor=white&style=for-the-badge"  alt="Download it" target="_blank"></a>
+- wget https://github.com/joaovitorlopes/autoassign/releases/download/1.1.0/autoassign.tar.bz2
 
 ## Install bzip2 to extract the contents:
 - apt install bzip2 -y
@@ -25,11 +25,11 @@
 - tar -jxvf autoassign.tar.bz2
 
 ## Move the plugin to the GLPI plugins folder:
-- mv autoassign /var/www/.../glpi/plugins/
+- mv autoassign /var/www/YOUR_PATH/glpi/plugins/
 
 ## Now grant permission to the plugin folder:
-- chown -R www-data:www-data /var/www/.../glpi/plugins/autoassign/
-- chmod -R 755 /var/www/.../glpi/plugins/autoassign/
+- chown -R www-data:www-data /var/www/YOUR_PATH/glpi/plugins/autoassign/
+- chmod -R 755 /var/www/YOUR_PATH/glpi/plugins/autoassign/
 
 ## Install and activate the plugin from the glpi plugins menu:
 ![plugininstall](screenshots/plugin-install.png)
