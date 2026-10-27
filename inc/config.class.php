@@ -6,14 +6,14 @@ if (!defined('GLPI_ROOT')) {
 
 class PluginAutoassignConfig extends CommonDBTM {
     
-    static $rightname = 'config';
+    public static string $rightname = 'config';
     
-    static function getTypeName($nb = 0) {
+    public static function getTypeName($nb = 0): string {
         return 'Auto Assign - Configuração';
     }
     
     function showForm($ID, array $options = []) {
-        global $DB;
+            global $DB, $CFG_GLPI;
         
         $iterator = $DB->request([
             'FROM' => 'glpi_plugin_autoassign_configs',
@@ -33,7 +33,7 @@ class PluginAutoassignConfig extends CommonDBTM {
         $change_status = (int)($config['change_status_to_new'] ?? 0);
         $allowed_profiles = json_decode($config['allowed_profiles'] ?? '[]', true) ?: [];
         
-        $form_action = Plugin::getWebDir('autoassign') . "/front/config.form.php";
+            $form_action = $CFG_GLPI['root_doc'] . "/plugins/autoassign/front/config.form.php";
         
         echo "<div class='center'>";
         echo "<form method='post' action='$form_action'>";
